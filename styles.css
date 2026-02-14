@@ -88,6 +88,13 @@ ul {
   line-height: 1.2;
 }
 
+.section-subtitle {
+  font-size: 1.05rem;
+  color: var(--color-text-light);
+  margin-top: 1rem;
+  line-height: 1.7;
+}
+
 /* --- Buttons --- */
 .btn {
   display: inline-block;
@@ -487,6 +494,10 @@ ul {
   gap: 1.5rem;
 }
 
+.events-grid-3col {
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .event-card {
   border-radius: var(--radius);
   overflow: hidden;
@@ -837,6 +848,10 @@ ul {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .events-grid-3col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .join-content {
     grid-template-columns: 1fr;
     gap: 2.5rem;
@@ -913,12 +928,9 @@ ul {
   }
 
   /* Events */
-  .events-grid {
+  .events-grid,
+  .events-grid-3col {
     grid-template-columns: 1fr;
-  }
-
-  .event-card-large {
-    grid-row: auto;
   }
 
   /* Testimonials */
